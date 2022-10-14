@@ -196,7 +196,7 @@ class Program
             string IsAdmin = InputAdmin();
             if(IsAdmin == "y")
             {
-                SignUp signUp = new SignUp(InputEmail(),InputPassword());
+                SignIn SignIn = new SignIn(InputEmail(),InputPassword());
             }
             
             Program.currentStudentList.AddNewCurrentStudent(currentstudent);
@@ -278,7 +278,7 @@ class Program
             string IsAdmin = InputAdmin();
             if(IsAdmin == "y")
             {
-                SignUp signUp = new SignUp(InputEmail(),InputPassword());
+                SignIn SignIn = new SignIn(InputEmail(),InputPassword());
             }
             
         }
@@ -389,11 +389,6 @@ class Program
     {
          Console.Write("Password: ");
         return Console.ReadLine();
-    }
-    static void BackToRegistration()
-    {
-        PrintRegistrationPageForTheEvent();
-        InputRegistrationPageForTheEventFromKeyboard();
     }
     static void BackToUserloginMenu()
     {
